@@ -1,26 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site pour choisir aléatoirement un nom avec un jeu de mots">
+    <meta name="author" content="Lucien BILL">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+    <title>Prénom + Nom = jeu de mots, aléatoire</title>
+    <script src="names.js" defer></script>
+    <script src="logic.js" defer></script>
+
+</head>
 
 <body>
 
-    <h1>Aléatoire(Prénom + Nom = jeu de mots)</h1>
+    <h1>Aléatoire (Prénom + Nom = jeu de mots)</h1>
     <div id="action">
         <input type="text" id="fname" name="fname">
-        <button type="button" onclick="printARandomName(names)">Choisir un autre nom</button>
+        <button type="button" id="chooseName" onclick="printARandomName(names)">Choisir un autre nom
+            aléatoirement</button>
+        <button type="button" id="copyToClipboard" onclick="copyToClipboard()">Copier</button>
     </div>
     <div id="about">
         <h2>A propos</h2>
         <p>Site débile en cours de construction.</p>
-        <p>Les noms ont été pillés sur <a href="https://mescanefeux.com/452" target="_blank">ce site</a>.</p>
+        <p>Les noms ont été en grande partie pillés sur <a href="https://mescanefeux.com/452" target="_blank">ce
+                site</a>.</p>
     </div>
 
 </body>
-<script src="names.js"></script>
-<script>
-    function printARandomName(list) {
-        document.getElementById("fname").value = list[Math.floor(Math.random() * list.length)];
-    }
 
-    printARandomName(names)
-</script>
 </html>
