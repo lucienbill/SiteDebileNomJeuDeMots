@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <body>
 
-<h1>Hello World</h1>
-<p>Site en cours de construction</p>
+    <h1>Aléatoire(Prénom + Nom = jeu de mots)</h1>
+    <div id="action">
+        <input type="text" id="fname" name="fname">
+        <button type="button" onclick="printARandomName(names)">Choisir un autre nom</button>
+    </div>
+    <div id="about">
+        <h2>A propos</h2>
+        <p>Site débile en cours de construction.</p>
+        <p>Les noms ont été pillés sur <a href="https://mescanefeux.com/452" target="_blank">ce site</a>.</p>
+    </div>
 
 </body>
-</html> 
+<script src="names.js"></script>
+<script>
+    function printARandomName(list) {
+        document.getElementById("fname").value = list[Math.floor(Math.random() * list.length)];
+    }
+
+    printARandomName(names)
+</script>
+</html>
