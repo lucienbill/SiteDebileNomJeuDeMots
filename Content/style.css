@@ -1,0 +1,38 @@
+body {
+  width: 80%;
+}
+
+#about{
+  width: 90%;
+}
+
+.collapsible {
+  /* background-color: #777; */
+  /* color: white; */
+  cursor: pointer;
+  /* padding: 18px; */
+  /* width: 100%; */
+  /* border: none; */
+  /* text-align: left; */
+  outline: none;
+}
+
+.collapsible::before {
+  content: "+ ";
+}
+
+.active, .collapsible:hover {
+  background-color: #ddd;
+}
+
+
+.active.collapsible::before  {
+  content: "- ";
+}
+
+.collapsiblecontent {
+  /* padding: 0 18px; */
+  display: none;
+  overflow: hidden;
+  /* background-color: #f1f1f1; */
+}

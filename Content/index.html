@@ -5,14 +5,17 @@
     <title>Prénom + Nom = jeu de mots, aléatoire</title>
 
     <meta charset="UTF-8">
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
     <meta name="description" content="Site pour choisir aléatoirement un nom avec un jeu de mots">
     <meta name="author" content="Lucien BILL">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="analytics.js" async></script>
+    <script src="collapsible.js" async></script>
     <script src="names.js" defer></script>
     <script src="logic.js" defer></script>
 
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -20,15 +23,19 @@
     <h1>Aléatoire (Prénom + Nom = jeu de mots)</h1>
     <div id="action">
         <input type="text" id="fname" name="fname">
-        <button type="button" id="chooseName" onclick="printARandomName(names)">Choisir un autre nom
-            aléatoirement</button>
         <button type="button" id="copyToClipboard" onclick="copyToClipboard()">Copier</button>
+        <br><button type="button" id="chooseName" onclick="printARandomName(names)">Choisir un autre nom
+            aléatoirement</button>
     </div>
     <div id="about">
-        <h2>A propos</h2>
-        <p>Site débile en cours de construction.</p>
-        <p>Les noms ont été en grande partie pillés sur <a href="https://mescanefeux.com/452" target="_blank">ce
-                site</a>.</p>
+        <!-- <button type="button" class="collapsible"><h2>A propos</h2></button> -->
+        <h2 class="collapsible">A propos</h2>
+        <div class="collapsiblecontent">
+            <p>Site débile en cours de construction.
+            <br>Les noms ont été en grande partie pillés sur <a href="https://mescanefeux.com/452" target="_blank">ce site</a>.
+            <br>Pour en savoir plus, visitez le <a href="https://github.com/lucienbill/SiteDebileNomJeuDeMots" target="_blank">repo GitHub</a>
+            </p>
+        </div>
     </div>
 
 </body>
