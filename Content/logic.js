@@ -1,3 +1,13 @@
+// --- Global variables ---
+// set timer identifier for the thing that handles how the copy button looks
+timerID = null;
+// Stuff for the thing that handles how the copy button looks
+copyButtonLooks = {
+    "copy"   : "Copier",
+    "copied" : "Copié ✔"
+}
+
+// --- Functions ---
 function printARandomName(list) {
     document.getElementById("fname").value = list[Math.floor(Math.random() * list.length)];
 }
@@ -13,16 +23,24 @@ function copyToClipboard() {
     /* Copy the text inside the text field */
     navigator.clipboard.writeText(copyText.value);
 
-    // FIXME : remplacer l'alerte par un truc façon Imgur
-    oldButtonInnerHTML = document.getElementById("copyToClipboard").innerHTML ;
-    document.getElementById("copyToClipboard").innerHTML = "Copié ✔";
-    // attendre 5 secondes
-    setTimeout(
+    /* Notify the user that "copy" is done */
+    cpButton = document.getElementById("copyToClipboard")
+    cpButton.innerHTML = copyButtonLooks.copied;
+    // Cancel the timer if it exists
+    if (timerID !== null)
+    {
+        clearTimeout(timerID);
+    }
+    // Set a timer to reset the button to "copy" after a while
+    timerID = setTimeout(
         function(){
-            document.getElementById("copyToClipboard").innerHTML = oldButtonInnerHTML
+            cpButton.innerHTML = copyButtonLooks.copy;
         }
         , 2000
     )
 }
 
+// --- Do stuff ---
+
+// print a random name on page landing
 printARandomName(names);
