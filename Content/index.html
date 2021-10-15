@@ -10,32 +10,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script src="analytics.js" async></script>
-    <script src="collapsible.js" async></script>
     <script src="names.js" defer></script>
     <script src="logic.js" defer></script>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
 </head>
 
 <body>
 
-    <h1>Aléatoire (Prénom + Nom = jeu de mots)</h1>
-    <div id="action">
-        <input type="text" id="fname" name="fname">
-        <button type="button" id="copyToClipboard" onclick="copyToClipboard()">Copier</button>
-        <br><button type="button" id="chooseName" onclick="printARandomName(names)">Choisir un autre nom
-            aléatoirement</button>
-    </div>
-    <div id="about">
-        <!-- <button type="button" class="collapsible"><h2>A propos</h2></button> -->
-        <h2 class="collapsible">A propos</h2>
-        <div class="collapsiblecontent">
-            <p>Site débile en cours de construction.
-            <br>Les noms ont été en grande partie pillés sur <a href="https://mescanefeux.com/452" target="_blank">ce site</a>.
-            <br>Pour en savoir plus, visitez le <a href="https://github.com/lucienbill/SiteDebileNomJeuDeMots" target="_blank">repo GitHub</a>
-            </p>
+    <header>
+        <h1>Prénom + Nom = jeu de mots</h1>
+    </header>
+    <main>
+        <div id="action">
+            <input type="text" id="fname" name="fname">
+            <button type="button" id="copyToClipboard" onclick="copyToClipboard()">Copier</button>
+            <br><button type="button" id="chooseName" onclick="printARandomName(names)">Choisir un autre nom aléatoirement</button>
         </div>
-    </div>
+        <details>
+            <summary>A propros</summary>
+            <p>Vous cherchez un prénom et un nom formant un jeu de mots ?
+            Ce site est fait pour vous !
+            Il sélectionne tout seul comme un grand un nom au hasard (dans une liste fixe, faisant partie des ressources de ce site), et vous l'affiche.
+            </p>
+            <p>Les noms ont été en grande partie pillés sur <a href="https://mescanefeux.com/452">ce site</a>.
+            <br>Pour en savoir plus, visitez le <a href="https://github.com/lucienbill/SiteDebileNomJeuDeMots">repo GitHub</a>
+            </p>
+        </details>
+    </main>
+    <footer>
+        <p>
+            <small>Site créé par <a href="https://github.com/lucienbill">Lucien BILL</a> - Style : <a href="https://simplecss.org">Simple.css</a></small>
+        </p>
+    </footer>
 
 </body>
 
