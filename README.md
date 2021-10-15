@@ -22,4 +22,7 @@ Le process de déploiement sur mon instance de Cloudflare Pages est : copier le 
 ## Je peux participer ?
 Oui !
 Si vous voulez ajouter vous-même des jeux de mots, des fonctionnalités, modifier l'apparence etc : soumettez une pull request.
-Si vous souhaitez demander l'ajout d'une fonctionnalité, d'un jeu de mot, signaler un bug et que vous n'avez ni le temps ni l'envie de coder, ouvrer une issue.
+Si vous souhaitez demander l'ajout d'une fonctionnalité, d'un jeu de mot, signaler un bug et que vous n'avez ni le temps ni l'envie de coder, ouvrez une issue.
+
+### Je veux ajouter des noms moi-même, y a-t-il des règles ?
+Pour le moment, les seules règles est de ne pas mettre de doublon et de trier la liste dans l'ordre alphabétique (c'est arbitraire, mais ça me donne l'impression d'y voir plus clair). Pour le reste, je suis ouvert à toutes propositions.
