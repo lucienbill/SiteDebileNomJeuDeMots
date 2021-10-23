@@ -9,16 +9,14 @@ copyButtonLooks = {
 
 // --- Functions ---
 function printARandomName(list) {
-    document.getElementById("fname").value = list[Math.floor(Math.random() * list.length)];
+    fname = document.getElementById("fname")
+    fname.value = list[Math.floor(Math.random() * list.length)];
+    fname.focus();
 }
 
 function copyToClipboard() {
     /* Get the text field */
     var copyText = document.getElementById("fname");
-
-    /* Select the text field */
-    copyText.select();
-    copyText.setSelectionRange(0, 99999); /* For mobile devices */
 
     /* Copy the text inside the text field */
     navigator.clipboard.writeText(copyText.value);
