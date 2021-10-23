@@ -1,6 +1,6 @@
 # Site pour choisir aléatoirement un nom avec un jeu de mots
 ## C'est quoi ce truc ?
-Je suis tombé un jour sur [ce site](https://mescanefeux.com/452), qui contient une liste de prénoms et de noms avec des jeux de mots.
+A l'époque où je travaillais avec [Mickaël](https://twitter.com/Mickael37A), il m'a fait découvrir [ce site](https://mescanefeux.com/452) qui contient une liste de prénoms et de noms avec des jeux de mots.
 Je m'en servais de temps en temps pour le travail (histoire vraie. Je teste des logiciels, et crée régulièrement des personnes fictives).
 Je suis très fainéant, je voulais donc un truc pour choisir aléatoirement un nom faisant partie de cette liste.
 
