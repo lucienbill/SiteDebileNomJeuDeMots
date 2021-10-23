@@ -15,20 +15,22 @@ function printARandomName(list) {
 }
 
 function copyToClipboard() {
-    /* Get the text field */
+    // Get the text field
     var copyText = document.getElementById("fname");
 
-    /* Copy the text inside the text field */
+    // Copy the text inside the text field
     navigator.clipboard.writeText(copyText.value);
 
-    /* Notify the user that "copy" is done */
+    // Notify the user that "copy" is done
     cpButton = document.getElementById("copyToClipboard")
     cpButton.innerHTML = copyButtonLooks.copied;
+
     // Cancel the timer if it exists
     if (timerID !== null)
     {
         clearTimeout(timerID);
     }
+    
     // Set a timer to reset the button to "copy" after a while
     timerID = setTimeout(
         function(){
