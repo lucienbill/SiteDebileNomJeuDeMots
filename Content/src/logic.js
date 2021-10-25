@@ -8,9 +8,14 @@ copyButtonLooks = {
 }
 
 // --- Functions ---
-function printARandomName(list) {
+function printARandomName() {
     fname = document.getElementById("fname")
-    fname.value = list[Math.floor(Math.random() * list.length)];
+    
+    if (document.getElementById("allowNSFW").checked){ //NSFW
+        fname.value = allnames[Math.floor(Math.random() * allnames.length)];
+    } else { //SFW
+        fname.value = namesSFW[Math.floor(Math.random() * namesSFW.length)];
+    }
     fname.focus();
 }
 
@@ -43,4 +48,4 @@ function copyToClipboard() {
 // --- Do stuff ---
 
 // print a random name on page landing
-printARandomName(names);
+printARandomName();
