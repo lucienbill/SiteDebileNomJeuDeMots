@@ -46,6 +46,10 @@ function copyToClipboard() {
 }
 
 // --- Do stuff ---
+// adding "nsfw" as a get parameter checks the checkbox (example: mysite.dev/?nsfw)
+if (window.location.search.substr(1).split("&").includes("nsfw")) {
+    document.getElementById("allowNSFW").checked = true;
+}
 
 // print a random name on page landing
 printARandomName();
