@@ -31,7 +31,11 @@
         <div id="action">
             <input type="text" id="fname" name="fname">
             <button type="button" id="copyToClipboard" onclick="copyToClipboard()">Copier</button>
-            <br><button type="button" id="chooseName" onclick="printARandomName(names)">Choisir un autre nom aléatoirement</button>
+            <br><button type="button" id="chooseName" onclick="printARandomName()">Choisir un autre nom aléatoirement</button>
+            <p><label>
+            <input type="checkbox" id="allowNSFW" value="nsfw">
+            Avec jeux de mots grossiers
+            </label></p>
         </div>
         <details>
             <summary>A propos</summary>
