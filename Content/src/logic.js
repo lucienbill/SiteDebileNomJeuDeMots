@@ -12,9 +12,9 @@ function printARandomName() {
     fname = document.getElementById("fname")
     
     if (document.getElementById("allowNSFW").checked){ //NSFW
-        fname.value = allnames[Math.floor(Math.random() * allnames.length)];
+        fname.value = allnames[Math.floor(Math.random() * allnames.length - 1)];
     } else { //SFW
-        fname.value = namesSFW[Math.floor(Math.random() * namesSFW.length)];
+        fname.value = namesSFW[Math.floor(Math.random() * namesSFW.length - 1)];
     }
     fname.focus();
 }
