@@ -28,7 +28,7 @@ function copyToClipboard() {
 
     // Notify the user that "copy" is done
     cpButton = document.getElementById("copyToClipboard")
-    cpButton.innerHTML = copyButtonLooks.copied;
+    cpButton.innerText = copyButtonLooks.copied;
 
     // Cancel the timer if it exists
     if (timerID !== null)
@@ -39,7 +39,7 @@ function copyToClipboard() {
     // Set a timer to reset the button to "copy" after a while
     timerID = setTimeout(
         function(){
-            cpButton.innerHTML = copyButtonLooks.copy;
+            cpButton.innerText = copyButtonLooks.copy;
         }
         , 2000
     )
