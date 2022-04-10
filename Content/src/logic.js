@@ -16,7 +16,6 @@ function printARandomName() {
     } else { //SFW
         fname.value = namesSFW[Math.floor(Math.random() * namesSFW.length)];
     }
-    fname.focus();
 }
 
 function copyToClipboard() {
