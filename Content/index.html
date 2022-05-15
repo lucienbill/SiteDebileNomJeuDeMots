@@ -29,9 +29,12 @@
     </header>
     <main>
         <div id="action" aria-label="formulaire pour obtenir un nom avec un jeu de mots, choisi aléatoirement dans une liste fixe (fournie par ce site internet)">
-            <input type="text" id="fname" name="fname" aria-label="nom avec un jeu de mots">
-            <button type="button" id="copyToClipboard" onclick="copyToClipboard()" aria-label="copier le nom dans votre presse-papier">Copier</button>
-            <br><button type="button" id="chooseName" onclick="printARandomName()">Choisir un autre nom aléatoirement</button>
+            <blockquote>
+                <strong id="fname" name="fname" aria-label="nom avec un jeu de mots" style="font-size:2rem;color:var(--text)"></strong>
+            </blockquote>
+            <button type="button" id="copyToClipboard" onclick="copyToClipboard()" aria-label="copier le nom dans votre presse-papier">📄 Copier</button>
+            <span>   </span>
+            <button type="button" id="chooseName" onclick="printARandomName()">🎲 Choisir un autre nom aléatoirement</button>
             <p><label>
             <input type="checkbox" id="allowNSFW" value="nsfw" aria-label="Autoriser les grossièretés">
             autoriser NSFW

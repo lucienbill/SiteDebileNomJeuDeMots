@@ -3,8 +3,8 @@
 let timerID = null;
 // Stuff for the thing that handles how the copy button looks
 const copyButtonLooks = {
-    "copy"   : "Copier",
-    "copied" : "Copié ✔"
+    "copy"   : "📄 Copier",
+    "copied" : "📄 Copié ✔"
 }
 
 // --- Functions ---
@@ -12,9 +12,9 @@ function printARandomName() {
     const fname = document.getElementById("fname")
     
     if (document.getElementById("allowNSFW").checked){ //NSFW
-        fname.value = allnames[Math.floor(Math.random() * allnames.length)];
+        fname.innerText = allnames[Math.floor(Math.random() * allnames.length)];
     } else { //SFW
-        fname.value = namesSFW[Math.floor(Math.random() * namesSFW.length)];
+        fname.innerText = namesSFW[Math.floor(Math.random() * namesSFW.length)];
     }
 }
 
@@ -23,7 +23,7 @@ function copyToClipboard() {
     const copyText = document.getElementById("fname");
 
     // Copy the text inside the text field
-    navigator.clipboard.writeText(copyText.value);
+    navigator.clipboard.writeText(copyText.innerText);
 
     // Notify the user that "copy" is done
     cpButton = document.getElementById("copyToClipboard")
