@@ -17,7 +17,9 @@ Ce site permet de choisir aléatoirement un prénom et un nom formant un jeu de 
 ### L'hébergement du site
 Pour héberger mon site, j'utilise [CloudFlare Pages](https://pages.cloudflare.com/#pricing).
 Le code source du site site est le contenu du dossier "Content" (du HTML, du javascript simple, du CSS) ; c'est du 100% front-end.
-Le process de déploiement sur mon instance de CloudFlare Pages est : copier le contenu du dossier "Content" et le mettre sur le serveur (en vrai c'est un peu plus subtil que ça, parce que CloudFlare est un CDN, blablabla : d'autres expliquent ça mieux que moi)
+
+Le process de déploiement sur mon instance de CloudFlare Pages est : copier le contenu du dossier "Content" et le mettre sur le serveur (en vrai c'est un peu plus subtil que ça, parce que CloudFlare est un CDN, blablabla : d'autres expliquent ça mieux que moi).
+Cette opération est réalisée automatiquement à chaque commit/merge sur la branche principale.
 
 ## Je peux participer ?
 Oui !
