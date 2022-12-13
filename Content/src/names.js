@@ -41,6 +41,8 @@ const namesSFW = [
     "André Naline",
     "Andy Capé",
     "Angèle Fermlaporte",
+    "Angèle Lesrecrutements",
+    "Angelo Silesaugmentations",
     "Anna Tomie",
     "Anna-Lise Du Rine",
     "Anne Héantie",
