@@ -499,4 +499,4 @@ const namesNSFW =[
     "Yvon Et Jacques Kulé",
 ]
 
-const allnames = (namesSFW+namesNSFW).split(",");
+const allnames = (namesSFW + "," + namesNSFW).split(",");
