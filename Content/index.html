@@ -14,6 +14,7 @@
     <script src="src/logic.js" defer></script>
 
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <!-- css à rajouter a la mano g pas accès lol -->
 
     <link rel="icon" href="favicon.ico" type="image/ico">
     <link rel="apple-touch-icon" href="src/apple-touch-icon.png"/>
@@ -21,6 +22,29 @@
 
 
 </head>
+
+<style>
+
+#historyNav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#historyNav li{
+    list-style-type: none;
+    margin-right: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#historyNav li.current {
+    cursor: default !important;
+    color: #ffb300;
+}
+
+</style>
 
 <body>
 
@@ -37,6 +61,13 @@
                 <input type="checkbox" id="allowNSFW" value="nsfw" >
             </label>
         </div>
+        <details aria-labelledby="summary" open>
+          <summary>Historique (<span id="historyCount"></span>)</summary>
+          <ul id="history">
+          </ul>
+          <ul id="historyNav">
+          </ul>
+        </details>
         <details aria-labelledby="summary">
             <summary>A propos</summary>
             <h2>"NSFW ?"</h2>
