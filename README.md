@@ -26,5 +26,10 @@ Oui !
 Si vous voulez ajouter vous-même des jeux de mots, des fonctionnalités, modifier l'apparence etc : soumettez une pull request.
 Si vous souhaitez demander l'ajout d'une fonctionnalité, d'un jeu de mot, signaler un bug et que vous n'avez ni le temps ni l'envie de coder, ouvrez une issue.
 
+### Ces personnes ont contribué au projet
+-  [Matthieu Haméon](https://github.com/mhameon)
+-  [GTexier37](https://github.com/GTexier37)
+-  [HugoLMTY](https://github.com/HugoLMTY)
+
 ### Je veux ajouter des noms moi-même, y a-t-il des règles ?
 Pour le moment, les seules règles sont de ne pas mettre de doublon et de trier la liste dans l'ordre alphabétique (c'est arbitraire, mais ça me donne l'impression d'y voir plus clair). Pour le reste, je suis ouvert à toute proposition.
