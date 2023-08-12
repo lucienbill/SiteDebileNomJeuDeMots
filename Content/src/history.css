@@ -1,0 +1,18 @@
+#historyNav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#historyNav li{
+    list-style-type: none;
+    margin-right: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#historyNav li.current {
+    cursor: default !important;
+    color: #ffb300;
+}
