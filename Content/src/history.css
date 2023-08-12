@@ -14,5 +14,5 @@
 
 #historyNav li.current {
     cursor: default !important;
-    color: #ffb300;
+    color: var(--accent);
 }
